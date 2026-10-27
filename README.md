@@ -1,24 +1,24 @@
 # sPHENIX-OO
 This repo details all of the work for OO substructure as well as some UE in both simulation and data. The code relies on the sPHENIX repo frameworks, so in order to use them, you'll need the associated libraries that come with those repos from sPHENIX. If possible, log in to SCDF with your BNL credentials.
 
-# To enter SCDF:
+## To enter SCDF:
 `ssh -X <username>@ssh.sdcc.bnl.gov`
-# ssh into an available sPHENIX node. [02-08] are possible nodes. It will prompt you to enter your BNL user-associated password:
+## ssh into an available sPHENIX node. [02-08] are possible nodes. It will prompt you to enter your BNL user-associated password:
 ` ssh sphnxuser05`
-# Enter pwd, you will be in your /u/ directory. This is a good place to `git clone` the sPHENIX repos to build your libraries.
-# If you move to the /user/ directory instead of /u/, you'll have more space to run and make your own codes. e.g.,
+## Enter pwd, you will be in your /u/ directory. This is a good place to `git clone` the sPHENIX repos to build your libraries.
+## If you move to the /user/ directory instead of /u/, you'll have more space to run and make your own codes. e.g.,
 `/sphenix/u/<username>`
 `/sphenix/user/<username>`
-# If you go to `/sphenix/`directory, you'll find more folders that store simulation files, data files, as well as places that have extra room for holding large root files. e.g., the jet group uses:
+## If you go to `/sphenix/`directory, you'll find more folders that store simulation files, data files, as well as places that have extra room for holding large root files. e.g., the jet group uses:
 `/sphenix/tg/tg01/jets`
-# Go ahead and make your own personal directory in here. Now you have a personal place to store files.
+## Go ahead and make your own personal directory in here. Now you have a personal place to store files.
 `cd /sphenix/tg/tg01/jets`
 `mkdir <usernmae>`
 
 
-## Getting Started with jet substructure:
+# Getting Started with jet substructure:
 
-# O+O jet substructure, run 35 simulation (reference sPHENIX wiki)
+## O+O jet substructure, run 35 simulation (reference sPHENIX wiki)
 
 Pythia8 jets embedded in HIJING O+O minimum bias. Reco = subtracted calorimeter towers.
 Observables: R_g, z_g of anti-kT R=0.4 jets reclustered from R_sub = 0.15 or 0.2 subjets.
